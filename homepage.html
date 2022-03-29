@@ -10,29 +10,56 @@
 </head>
 <body>
 
-<form action="action_page.php" method="post">
-    <div class="imgcontainer">
-        <img src="img_avatar2.png" alt="Avatar" class="avatar">
-    </div>
+<style type="text/css">
+    .tg  {border-collapse:collapse;border-spacing:0;padding: 4px;}
+    .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+      overflow:hidden;padding:10px 5px;word-break:normal;}
+    .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+      font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+    .tg .tg-0lax{text-align:left;vertical-align:top}
+    </style>
+    <form action="action_page.php" method="post">
+    <table class="tg">
+    <thead>
+      <tr>
+        <th class="tg-0lax"></th>
+        <th class="tg-0lax"></th>
+        <th class="tg-0lax"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="tg-0lax">
+            <label for="uname"><b>Username</b></label>
+        </td>
+        <td class="tg-0lax">
+            <input class="input" type="text" placeholder="Enter Username" name="uname" required>
+        </td>
+        <td class="tg-0lax">
+            <button class="button" type="submit">Login</button>
+        </td>
+      </tr>
+      <tr>
+        <td class="tg-0lax">
+            <label for="psw"><b>Password</b></label>
+        </td>
+        <td class="tg-0lax">
+            <input class="input" type="password" placeholder="Enter Password" name="psw" required>
+        </td>
+        <td class="tg-0lax">
+            <button type="button" class="cancelbtn">Cancel</button>
+        </td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax"></td>
+      </tr>
+    </tbody>
+    </table>
+    </form>
 
-    <div class="container">
-        <label for="uname"><b>Username</b></label>
-        <input type="text" placeholder="Enter Username" name="uname" required>
 
-        <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
-
-        <button type="submit">Login</button>
-        <label>
-            <input type="checkbox" checked="checked" name="remember"> Remember me
-        </label>
-    </div>
-
-    <div class="container" style="background-color:#f1f1f1">
-        <button type="button" class="cancelbtn">Cancel</button>
-        <span class="psw">Forgot <a href="#">password?</a></span>
-    </div>
-</form>
 
 </body>
 </html>
